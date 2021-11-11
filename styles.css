@@ -1,6 +1,33 @@
-.nav-icon {
-  display: inline-block;
-  width: 400px;
-  height: 400px;
-  border: red solid 1px;
-  background-size: contain no-repeat;
+:root {
+  --background-1: #ffffff;
+  --background-2: #f7f8f8;
+  --background-3: #000000;
+  --background-banner: #f6d531;
+
+  --font-color-main-1: #fff;
+  --font-color-main-2: rgb(0, 0, 0);
+  --font-color-acc-1: rgb(80, 86, 102);
+  --font-color-acc-2: rgb(167, 170, 178);
+  --font-color-acc-3: rgb(204, 0, 153);
+  --font-color-acc-4: rgb(0, 204, 204);
+
+  --icon-color-1: #ced1d4;
+  --icon-color-2: #808080;
+
+  --font-1: "Raleway", sans-serif;
+  --font-2: "Rubik", sans-serif;
+  --font-3: "Tomorrow", sans-serif;
+  --font-4: "Bebas Neue", cursive;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+}
