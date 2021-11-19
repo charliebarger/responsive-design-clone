@@ -478,6 +478,86 @@ article * {
   background-image: url(./assets/3-explore/6-house-of-talent/background.jpg);
 }
 
+/* snarkiest section */
+
+.snarky {
+  padding: 4rem;
+
+  background: #000 url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 50%;
+}
+
+.snarky h2 {
+  font-size: 1.5rem;
+  color: var(--font-color-main-1);
+}
+
+.snarky p,
+.snarky p * {
+  font-size: 1rem;
+  color: white;
+  font-family: var(--font-2);
+  text-align: center;
+  font-weight: 400;
+}
+
+.snarky p a {
+  color: var(--font-color-acc-4);
+}
+
+.snarky p a:hover {
+  color: white;
+}
+
+.input-wrapper {
+  display: flex;
+}
+
+.input-wrapper * {
+  background: white;
+}
+
+.mail-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 5px 0 0 5px;
+}
+
+.input-wrapper input {
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.input-wrapper svg {
+  height: 16px;
+  fill: var(--icon-color-1);
+  margin: 0 0.75rem;
+  align-self: center;
+}
+
+.inner-input-wrapper {
+  flex: 1;
+  padding: 1rem 0;
+}
+
+.input-wrapper button {
+  padding: 0 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  text-transform: uppercase;
+  font-family: var(--font-2);
+  background: var(--font-color-acc-3);
+  color: white;
+  cursor: pointer;
+}
+
+.input-wrapper button:hover {
+  background: var(--font-color-acc-4);
+}
+
 @media screen and (min-width: 768px) {
   .center-wrap {
     padding-left: 4rem;
