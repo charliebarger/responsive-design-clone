@@ -481,7 +481,7 @@ article * {
 /* snarkiest section */
 
 .snarky {
-  padding: 4rem;
+  padding: 2.125rem;
 
   background: #000 url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
   background-size: cover;
@@ -531,6 +531,10 @@ article * {
   outline: none;
 }
 
+.input-wrapper input::placeholder {
+  font-family: var(--font-2);
+  color: var(--icon-color-1);
+}
 .input-wrapper svg {
   height: 16px;
   fill: var(--icon-color-1);
@@ -556,6 +560,22 @@ article * {
 
 .input-wrapper button:hover {
   background: var(--font-color-acc-4);
+}
+
+.social-icon {
+  width: 24px;
+  fill: rgba(255, 255, 255, 60%);
+  transition: 0.05s ease-in-out;
+}
+
+.social-icon:hover {
+  fill: white;
+}
+
+.svg-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.0625rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -625,6 +645,11 @@ article * {
   .explore ul li:last-child {
     margin-right: 0;
   }
+
+  .input-wrapper {
+    width: 35.75rem;
+    margin: auto;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -656,7 +681,7 @@ article * {
     fill: var(--font-color-acc-3);
   }
 
-  .mail-icon {
+  .mail-icon.above-1024 {
     position: absolute;
     height: 100%;
     width: 1.25rem;
@@ -764,5 +789,8 @@ article * {
   .explore ul {
     margin-left: 0;
     margin-right: 0;
+  }
+  .input-wrapper {
+    margin: auto;
   }
 }
