@@ -481,17 +481,21 @@ article * {
 /* snarkiest section */
 
 .snarky {
-  padding: 2.125rem;
+  padding: 4rem 2.125rem;
 
   background: #000 url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .snarky h2 {
   font-size: 1.5rem;
   color: var(--font-color-main-1);
+  margin: 0;
 }
 
 .snarky p,
@@ -576,6 +580,7 @@ article * {
   display: flex;
   justify-content: center;
   gap: 1.0625rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {
