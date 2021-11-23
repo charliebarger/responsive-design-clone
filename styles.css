@@ -348,7 +348,7 @@ article * {
   top: 0;
 }
 
-.latest-wrapper time {
+time {
   font-weight: 100;
   font-size: 0.75rem;
   font-family: Helvetica, sans-serif;
@@ -429,6 +429,7 @@ article * {
   margin-right: 1rem;
   padding: 2rem 1rem;
   cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
 }
 
 .explore ul li a {
@@ -583,8 +584,64 @@ article * {
   margin-top: 1rem;
 }
 
+.watch {
+  background: var(--background-2);
+}
+
+.iframe-wrapper,
+.aspect-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.iframe-wrapper iframe,
+.aspect-wrapper > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-vid-wrapper .video-caption {
+  background: var(--background-3);
+  color: var(--font-color-main-1);
+  line-height: 1.35rem;
+  padding: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.video-scroll ul {
+  display: flex;
+  overflow: scroll;
+  padding: 0.5rem 1rem;
+}
+
+.video-scroll ul li {
+  padding: 0.5rem;
+  min-width: 224px;
+  list-style: none;
+}
+
+.video-scroll ul li img {
+  object-fit: cover;
+}
+
+.video-scroll ul li span {
+  font-size: 0.875rem;
+}
+
+.video-scroll .fade {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .center-wrap {
+  .center-wrap,
+  .watch {
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -618,7 +675,7 @@ article * {
     border-radius: 0;
   }
 
-  .latest-stories time {
+  time {
     font-size: 0.875rem;
   }
 
@@ -655,6 +712,39 @@ article * {
     width: 35.75rem;
     margin: auto;
   }
+
+  .watch > div {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 224px;
+  }
+
+  .video-scroll {
+    position: relative;
+  }
+
+  .video-scroll ul {
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0;
+  }
+
+  .video-scroll ul li {
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+
+  .video-scroll .fade {
+    display: block;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, white);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -666,7 +756,8 @@ article * {
     display: none;
   }
 
-  .center-wrap {
+  .center-wrap,
+  .watch {
     padding-left: 2rem;
     padding-right: 2rem;
   }
