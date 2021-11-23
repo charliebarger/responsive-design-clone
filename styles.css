@@ -10,6 +10,7 @@
   --font-color-acc-2: rgb(167, 170, 178);
   --font-color-acc-3: rgb(204, 0, 153);
   --font-color-acc-4: rgb(0, 204, 204);
+  --font-color-acc-5: rgb(0, 217, 217);
 
   --icon-color-1: #ced1d4;
   --icon-color-2: #808080;
@@ -639,6 +640,67 @@ time {
   display: none;
 }
 
+.work-text > span {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: var(--font-3);
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--font-color-acc-3);
+  margin-bottom: 0.5rem;
+}
+
+.work-text {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.work-text p {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  color: var(--font-color-acc-1);
+  line-height: 1.6875rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin: 2rem 0;
+}
+
+.work-text button {
+  background: var(--font-color-acc-4);
+  height: 3rem;
+  padding: 0 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.work-text button:hover {
+  background: var(--font-color-acc-5);
+}
+
+.random-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  padding: 1rem 0;
+}
+
+.random-icons figure {
+  width: 96px;
+  margin: auto;
+}
+
+.random-icons figcaption {
+  text-align: center;
+  font-family: var(--font-2);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .center-wrap,
   .watch {
@@ -744,6 +806,25 @@ time {
     left: 0;
     right: 0;
     background: linear-gradient(transparent, white);
+  }
+
+  .work-for-us {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+
+  .work-text {
+    text-align: left;
+  }
+
+  .random-icons figure {
+    width: auto;
+  }
+
+  .random-icons figure img {
+    width: 112px;
   }
 }
 
@@ -888,5 +969,15 @@ time {
   }
   .input-wrapper {
     margin: auto;
+  }
+
+  .random-icons figure {
+    display: flex;
+    align-items: center;
+  }
+
+  .random-icons figcaption {
+    margin-top: 0;
+    margin-left: 1rem;
   }
 }
