@@ -572,6 +572,7 @@ time {
   width: 24px;
   fill: rgba(255, 255, 255, 60%);
   transition: 0.05s ease-in-out;
+  cursor: pointer;
 }
 
 .social-icon:hover {
@@ -724,6 +725,96 @@ time {
   opacity: 1;
 }
 
+footer {
+  background: var(--background-3);
+  color: white;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+footer .top {
+  margin-bottom: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+footer .bottom-logo-wrapper {
+  width: 10rem;
+}
+
+footer .bottom-logo-wrapper svg {
+  width: 100%;
+  height: auto;
+  fill: white;
+  margin-bottom: 1rem;
+}
+
+footer .top p {
+  font-size: 1.625rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.1px;
+  margin-bottom: 2rem;
+}
+
+footer .top .svg-wrapper {
+  margin-top: 0;
+  justify-content: start;
+}
+
+footer .footer-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 1rem 0;
+}
+
+footer .footer-links h4 {
+  font-size: 1.625rem;
+  font-family: "Bebas Neue";
+  font-weight: 100;
+}
+
+footer .footer-links li {
+  list-style: none;
+  color: var(--font-color-acc-4);
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  margin: 0.75rem 0;
+  font-weight: 100;
+}
+
+footer .footer-links li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.1875rem;
+}
+
+.low-footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: solid 1px rgb(80, 86, 102);
+  margin-left: -100px;
+  color: rgb(167, 170, 178);
+  margin-right: -100px;
+}
+
+.low-footer * {
+  font-size: 0.875rem;
+  font-family: sans-serif;
+  padding: 0.3125rem 0;
+}
+
+.low-footer p {
+  font-weight: 100;
+}
+
+.low-footer strong {
+  font-weight: 400;
+  color: white;
+  transition: 0.25s ease-in-out;
+}
+
+.low-footer strong:hover {
+  color: var(--font-color-acc-3);
+}
+
 @media screen and (min-width: 768px) {
   .center-wrap,
   .watch {
@@ -857,6 +948,11 @@ time {
 
   .logos img {
     width: 33%;
+  }
+
+  footer .top {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
   }
 }
 
@@ -1021,5 +1117,32 @@ time {
     flex: 1;
     width: 0%;
     padding: 0;
+  }
+
+  footer {
+    overflow: hidden;
+  }
+
+  footer .main-footer {
+    display: flex;
+  }
+
+  footer .top {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  footer .footer-links {
+    flex: 1;
+    margin: 1rem 0;
+  }
+
+  footer .top p {
+    margin-bottom: auto;
+  }
+
+  footer .svg-wrapper {
+    margin-bottom: 0.5rem;
   }
 }
