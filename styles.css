@@ -790,9 +790,9 @@ footer .footer-links li:hover {
   text-align: center;
   padding-top: 2rem;
   border-top: solid 1px rgb(80, 86, 102);
-  margin-left: -100px;
+  margin-left: -1.5rem;
   color: rgb(167, 170, 178);
-  margin-right: -100px;
+  margin-right: -1.5rem;
 }
 
 .low-footer * {
@@ -815,11 +815,20 @@ footer .footer-links li:hover {
   color: var(--font-color-acc-3);
 }
 
+footer .svg-wrapper {
+  margin-bottom: 1.5rem;
+}
+
 @media screen and (min-width: 768px) {
   .center-wrap,
   .watch {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .low-footer {
+    margin-left: -4rem;
+    margin-right: -4rem;
   }
 
   .image-container {
@@ -969,6 +978,11 @@ footer .footer-links li:hover {
   .watch {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .low-footer {
+    margin-left: -2rem;
+    margin-right: -2rem;
   }
 
   .nav-top {
@@ -1140,9 +1154,5 @@ footer .footer-links li:hover {
 
   footer .top p {
     margin-bottom: auto;
-  }
-
-  footer .svg-wrapper {
-    margin-bottom: 0.5rem;
   }
 }
